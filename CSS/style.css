@@ -1,0 +1,124 @@
+@import url("/css/global/fonts.css");
+@import url("/css/global/boilerplate.css");
+
+
+
+.main_Container {
+    max-width: 600px;
+}
+
+.container-right h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.container-right {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius:  0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+
+.container-right p {
+    margin-bottom: 2rem;
+}
+
+.container-right ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.container-right ul li:first-child {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.container-right ul li:last-child {
+    color: var(--color-drk-grey-blue);
+}
+
+.perfume_btn {
+    color: var(--color-white);
+    background-color: var(--color-dark-cyan);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: .625rem;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfume_btn:hover {
+    background-color: hsl(158, 38%, 20%);
+}
+
+
+.perfume_btn img {
+    margin-right: .5rem;
+}
+
+.container-left {
+    border-radius: 1rem 1rem 0 0;
+}
+
+h1, 
+.price {
+    font-family: "Fraunces", sans-serif;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.product_Price {font-family: "Fraunces", sans-serif;}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: .825rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+
+button, li {
+    font-family: inherit;
+}
+
+
+@media (min-width: 640px) {
+    .main_Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_left_img {
+        border-radius: 1rem 0 0 1rem;
+        height: 100%;
+    }
+    .container-right {
+        border-radius: 0 1rem 1rem 0;
+        margin-top: 0;
+        
+    }
+
+    .container-right p {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
